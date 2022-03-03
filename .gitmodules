@@ -1,0 +1,3 @@
+[submodule "flashcards_react_native"]
+	path = flashcards_react_native
+	url = https://github.com/LynAudubon/flashcards_react_native.git
