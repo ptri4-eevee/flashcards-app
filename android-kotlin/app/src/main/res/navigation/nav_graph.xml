@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/flashcardFragment">
+
+    <fragment
+        android:id="@+id/flashcardFragment"
+        android:name="com.eevee.eeveeflashcards.FlashcardFragment"
+        android:label="Flashcards" >
+        <action
+            android:id="@+id/action_flashcardFragment_to_flashcardChallengeFragment"
+            app:destination="@id/flashcardChallengeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flashcardChallengeFragment"
+        android:name="com.eevee.eeveeflashcards.FlashcardChallengeFragment"
+        android:label="Challenge Question">
+        <action
+            android:id="@+id/action_flashcardChallengeFragment_to_flashcardFragment"
+            app:destination="@id/flashcardFragment" />
+    </fragment>
+</navigation>
